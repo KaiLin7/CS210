@@ -68,17 +68,16 @@ public class SearchTable extends Table {
 
 	@Override
 	public List<Object> get(Object key) {
-		/*
-		 * TODO: For Lab 1 (optional), implement
-		 * the move-to-front or transpose heuristic.
-		 */
+
 
 		if (key == null) throw new NullPointerException();
 
 		for (int i = 0; i < list.size(); i++) {
 			List<Object> row = list.get(i);
-			if (row != null && row.get(primaryIndex).equals(key))
+			if (row != null && row.get(primaryIndex).equals(key)){
+				list.add(0, list.remove(i));
 				return row;
+		}
 		}
 		return null;
 	}
