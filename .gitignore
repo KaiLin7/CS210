@@ -1,0 +1,11 @@
+/.classpath
+/.project
+/.settings/
+/.metadata/
+/.recommenders/
+/.idea/
+/.gradle/
+/bin/
+/build/
+/target/
+*.log.*

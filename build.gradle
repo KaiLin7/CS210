@@ -1,0 +1,34 @@
+plugins {
+	id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+	options.release = 16
+}
+
+version = "21.8.0"
+
+dependencies {
+	// For JUnit 5
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+
+	// For JSON-P (Module 5)
+	implementation 'jakarta.json:jakarta.json-api:2.0.1'
+	implementation 'org.glassfish:jakarta.json:2.0.1'
+}
+
+test {
+	useJUnitPlatform()
+
+	testLogging {
+		showExceptions true
+		showCauses true
+		showStackTraces false
+		exceptionFormat 'full'
+		events 'passed', 'failed', 'standardOut', 'standardError'
+	}
+}
