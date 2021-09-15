@@ -33,7 +33,7 @@ public class HashArrayTable extends Table {
 	@Override
 	public void clear() {
 		//initialize the array as necessary
-		//initialize c.v as necessary
+		//initialize companion variable as necessary
 
 	}
 
