@@ -24,41 +24,60 @@ public class HashArrayTable extends Table {
 	 * @param primaryIndex the primary index
 	 */
 	public HashArrayTable(String tableName, List<String> columnNames, List<String> columnTypes, Integer primaryIndex) {
-		throw new UnsupportedOperationException("Hash array table creation is unimplemented");
+	//initialize all the schema properties
+		//example setTableName(tableName);
+		
+		//initialize the fields, or call clear 
 	}
 
 	@Override
 	public void clear() {
+		//initialize the array as necessary
+		//initialize c.v as necessary
 
 	}
 
 	@Override
 	public boolean put(List<Object> row) {
+		//implement put
+		//if necessary,rehash
 		return false;
 	}
-
+	
+	//helper methods
+	//hash function
+	//collision resolution technique
+	//computing prime numbers
+	
 	@Override
 	public boolean remove(Object key) {
+		//implement remove
 		return false;
 	}
 
 	@Override
 	public List<Object> get(Object key) {
+		//implement get
 		return null;
 	}
 
+	//implement helper method when rehashing
+	
 	@Override
 	public int size() {
+		//return size companion variable
 		return 0;
 	}
 
 	@Override
 	public int capacity() {
+		//return the length of the array
 		return 0;
 	}
 
 	@Override
 	public Iterator<List<Object>> iterator() {
+		//implement the iterator
 		return null;
 	}
 }
